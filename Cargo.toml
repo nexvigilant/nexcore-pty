@@ -1,0 +1,65 @@
+[package]
+name = "nexcore-pty"
+version = "0.1.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+description = "POSIX pseudo-terminal allocation for NexVigilant terminal sessions"
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints.rust]
+unsafe_code = "deny"
+unexpected_cfgs = "allow"
+async_fn_in_trait = "allow"
+dead_code = "allow"
+unused_imports = "allow"
+unused_variables = "allow"
+unused_mut = "allow"
+unused_assignments = "allow"
+unused_must_use = "allow"
+
+[lints.clippy]
+all = { level = "allow", priority = -1 }
+pedantic = { level = "allow", priority = -1 }
+nursery = { level = "allow", priority = -1 }
+cargo = { level = "allow", priority = -1 }
+unwrap_used = "allow"
+expect_used = "allow"
+panic = "allow"
+indexing_slicing = "allow"
+arithmetic_side_effects = "allow"
+string_slice = "allow"
+panic_in_result_fn = "allow"
+unwrap_in_result = "allow"
+exit = "allow"
+float_cmp = "allow"
+lossy_float_literal = "allow"
+as_conversions = "allow"
+disallowed_types = "allow"
+map_err_ignore = "allow"
+let_underscore_must_use = "allow"
+wildcard_enum_match_arm = "allow"
+allow_attributes_without_reason = "allow"
+exhaustive_enums = "allow"
+exhaustive_structs = "allow"
+dbg_macro = "deny"
+print_stdout = "allow"
+print_stderr = "allow"
+shadow_unrelated = "allow"
+map_unwrap_or = "allow"
+manual_map = "allow"
+option_map_or_none = "allow"
+too_many_arguments = "allow"
+derivable_impls = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+must_use_candidate = "allow"
+module_name_repetitions = "allow"
+doc_markdown = "allow"
